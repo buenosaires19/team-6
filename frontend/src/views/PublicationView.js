@@ -9,10 +9,8 @@ import { Button,ButtonGroup, AnchorButton, Card, Elevation, Icon } from "@bluepr
 const PublicationView = () => 
     <p>
         
-        <h1 className="titulo">Candidatas</h1>
-        
-         <Card interactive={true} elevation={Elevation.TWO}>
-           
+        <h1 className="titulo">Candidatas</h1>        
+         <Card interactive={true} elevation={Elevation.TWO}>         
          
         <p className="nombreCandidata">Maria Salerno</p>
         <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSqfYIcPYstFZS0tdw24sju588C5O-EksHFpK8PlqedEnNQvaajQ"} alt="Logo" />
