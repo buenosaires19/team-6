@@ -68,3 +68,12 @@ def sortearProvincia(provinciaElegida):
         if x.provincia==provinciaElegida:
             personasProvincias.append(personas[x])
     return personasProvincias
+    
+def sortearArea(areaElegida):
+    personasDic = levantarInfoDB()
+    personasArea = []
+
+    for x in personas:
+        if x.area == areaElegida:
+            personasArea.append(personas[x])
+    return personasArea
