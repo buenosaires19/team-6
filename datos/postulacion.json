@@ -1,4 +1,5 @@
 {
+    "id": 0,
     "nombre": "Maria",
     "apellido": "Sol",
     "nacimiento": "26/12/1990",
@@ -6,5 +7,6 @@
     "foto": "url",
     "contacto": "string",
     "provincia": "Buenos Aires",
-    "area": ["informatica", "biologia"]
+    "area": ["informatica", "biologia"],
+    "votos": 0
   }
