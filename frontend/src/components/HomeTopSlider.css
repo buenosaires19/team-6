@@ -6,3 +6,18 @@
   background-size: cover;
   height:400px;
 }
+.subtitulo{
+  text-align: center;
+    color: rgba(242, 248, 242, 0.87);
+    font-size: 42px;
+    font-weight: 600;
+}
+.descrip{
+  color: rgba(10, 2, 36, 0.801);
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 100px;
+  font-style: italic;
+  background: #f500ffb0;
+  text-align: center;
+}

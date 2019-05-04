@@ -3,6 +3,8 @@ import ItemsCarousel from 'react-items-carousel';
 import range from 'lodash/range';
 import {Link} from 'react-router-dom';
 import './HomeTopSlider.css';
+import {subtitulo} from './HomeTopSlider';
+import {descrip} from './HomeTopSlider';
 
 
 class HomeTopSlider extends React.Component {
@@ -66,8 +68,8 @@ const Slide = (postulacion, id) =>
     <div className="imagen-carousel" key={id} style={
         {backgroundImage: "url(http://placekitten.com/1000/700)" }
         }>
-        {postulacion.nombre}, {postulacion.apellido}<br/>
-        <Link to={`/publicacion/${postulacion.id}`}>{postulacion.descripcion}</Link>
+        <p className="subtitulo">{postulacion.nombre}, {postulacion.apellido}</p><br/>
+        <Link to={`/publicacion/${postulacion.id}`} className="descrip">{postulacion.descripcion}</Link>
     </div>
 
 export default HomeTopSlider;

@@ -1,14 +1,16 @@
 import React from 'react';
 import HomeTopSlider from '../components/HomeTopSlider';
-import { H1, H2 } from '@blueprintjs/core';
+import {  H1, H2 } from '@blueprintjs/core';
 import HomeLinks from '../components/HomeLinks';
 import { mockTop } from '../mock/mock';
+import './HomeView.css'
+
 
 const HomeView = () => 
     <div>
-        <H1>Grandes Mujeres</H1>        
+        <h1 className="titulo1home">Grandes Mujeres</h1>        
         <HomeTopSlider postulaciones={mockTop}/>
-        <H2>Destacadas del mes</H2>
+        <h2 className="titulo2home">Destacadas del mes</h2>
         <HomeLinks />
     </div>
 
