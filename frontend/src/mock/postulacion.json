@@ -1,0 +1,10 @@
+{
+    "nombre": "Maria",
+    "apellido": "Sol",
+    "nacimiento": "26/12/1990",
+    "descripcion": "descripcion...",
+    "foto": "url",
+    "contacto": "string",
+    "provincia": "Buenos Aires",
+    "area": ["informatica", "biologia"]
+  }
