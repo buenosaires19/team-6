@@ -1,0 +1,26 @@
+.titulo{
+    color:rgb(30, 160, 211);
+}
+.nombreCandidata{
+    color:rgb(205, 30, 211);
+    font-size: 37px;
+}
+.especialidad{
+    
+ color:rgb(0, 0, 0);
+ font-size: 22px
+}
+.actividad{
+
+    color:rgb(89, 221, 36);
+    font-size: 22px
+
+}
+.detalles{
+        color:rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: justify
+           
+    }
+
+    
