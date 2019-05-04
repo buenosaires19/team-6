@@ -1,5 +1,8 @@
+
 POST: /article/
 {
+  "id": 0,
+  "votos": 0,
   "nombre": "Maria",
   "apellido": "Sol",
   "nacimiento": "26/12/1990",
@@ -12,23 +15,23 @@ POST: /article/
 
 response:
 {
-  "id": "uuid",
+  "id": 0,
+  "votos": 0,
   "nombre": "Maria",
   "apellido": "Sol",
   "nacimiento": "26/12/1990",
   "descripcion": "descripcion...",
   "foto": "url",
   "contacto": "string",
-  "vote": 0,
   "provincia": "Buenos Aires",
   "area": ["informatica", "biologia"]
 }
 
 POST: /article/:id/vote  (null)
-
 respose:
 {
-  "id": "uuid",
+  "id": 0,
+  "votos": 0,
   "nombre": "Maria",
   "apellido": "Sol",
   "nacimiento": "26/12/1990",
@@ -43,7 +46,8 @@ respose:
 
 GET: /article/:id
 {
-  "id": "uuid",
+  "id": 0,
+  "votos": 0,
   "nombre": "Maria",
   "apellido": "Sol",
   "nacimiento": "26/12/1990",
@@ -56,7 +60,8 @@ GET: /article/:id
 
 GET: /articles
 [{
-  "id": "uuid",
+  "id": 0,
+  "votos": 0,
   "nombre": "Maria",
   "apellido": "Sol",
   "nacimiento": "26/12/1990",
@@ -67,7 +72,8 @@ GET: /articles
   "provincia": "Buenos Aires",
   "area": ["informatica", "biologia"]
 },{
-  "id": "uuid",
+  "id": 0,
+  "votos": 0,
   "nombre": "Maria",
   "apellido": "Sol",
   "nacimiento": "26/12/1990",
