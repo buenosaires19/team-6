@@ -60,3 +60,11 @@ def getJSONRank():
     for i in personas:
         personasJSON.append(personas[i].getJSON())
     return personasJSON
+
+def sortearProvincia(provinciaElegida):
+    personas =levantarInfoDB()
+    personasProvincias=[]
+    for x in personas:
+        if x.provincia==provinciaElegida:
+            personasProvincias.append(personas[x])
+    return personasProvincias
