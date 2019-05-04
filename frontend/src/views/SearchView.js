@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, H3, Divider } from '@blueprintjs/core';
-import {  mockProvinciasSelect, mockAreasSelect, mockPostulacion } from '../mock/mock';
+import {  mockProvinciasSelect, mockAreasSelect, mockPostulacion, mockTop } from '../mock/mock';
 import Select from 'react-select';
 import SearchItem from '../components/SearchItem';
 
@@ -30,9 +30,8 @@ const SearchView = ({onChange, voteFilter, provinciaFilter, areaFilter}) =>
             </Card>
         </div>
         <div className="col-xs-12 col-sm-8">
-            <SearchItem {...mockPostulacion} />
-            <Divider />
-            <SearchItem {...mockPostulacion} />
+            {mockTop.map((postulacion) => <SearchItem {...postulacion} />)
+                }
         </div>
     </div>
 

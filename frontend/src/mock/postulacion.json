@@ -1,11 +1,56 @@
-{
+[
+  {
     "id": 0,
     "nombre": "Maria",
     "apellido": "Solares",
     "nacimiento": "26/12/1990",
     "descripcion": "Educadora de robótica en escuelas primarias",
+    "foto": "https://pbs.twimg.com/media/Dgm3CQqU8AA51qG.jpg",
+    "contacto": "maria.sol@fakegmail.com",
+    "provincia": "Buenos Aires",
+    "area": ["robótica", "biologia"]
+  },
+  {
+    "id": 1,
+    "nombre": "Camila",
+    "apellido": "Proni",
+    "nacimiento": "26/12/1",
+    "descripcion": "Ingeniera química trabajando en una petroquímica",
+    "foto": "https://www.fomento.edu/miravalleselredin/sites/default/files/styles/noticia_interior/public/robotica.jpg?itok=sTqXuU7s",
+    "contacto": "maria.sol@fakegmail.com",
+    "provincia": "Buenos Aires",
+    "area": ["informatica", "biologia"]
+  },
+  {
+    "id": 2,
+    "nombre": "Guadalupe",
+    "apellido": "Gómez",
+    "nacimiento": "26/12/1",
+    "descripcion": "Nanotecnóloga y directora de un proyecto sobre futuros alternativos",
+    "foto": "https://salamancartvaldia.es/fotos/articulo-fichero_786988_20181114.jpg,950,380,0.jpg",
+    "contacto": "maria.sol@fakegmail.com",
+    "provincia": "Buenos Aires",
+    "area": ["informatica", "biologia"]
+  },
+  {
+    "id": 3,
+    "nombre": "Michelle",
+    "apellido": "Valiero",
+    "nacimiento": "26/12/1920",
+    "descripcion": "",
     "foto": "http://placekitten.com/800/600",
     "contacto": "maria.sol@fakegmail.com",
     "provincia": "Buenos Aires",
     "area": ["informatica", "biologia"]
+  },{
+    "id": 4,
+    "nombre": "Mariana",
+    "apellido": "Azolís",
+    "nacimiento": "26/12/1895",
+    "descripcion": "CTO en una ecommerce",
+    "foto": "http://placekitten.com/800/600",
+    "contacto": "maria.sol@fakegmail.com",
+    "provincia": "Buenos Aires",
+    "area": ["informatica"]
   }
+]
