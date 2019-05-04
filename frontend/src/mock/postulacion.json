@@ -26,8 +26,8 @@
     "nombre": "Guadalupe",
     "apellido": "Gómez",
     "nacimiento": "26/12/1",
-    "descripcion": "Educadora de robótica en escuelas primarias",
-    "foto": "http://placekitten.com/800/600",
+    "descripcion": "Nanotecnóloga y directora de un proyecto sobre futuros alternativos",
+    "foto": "https://salamancartvaldia.es/fotos/articulo-fichero_786988_20181114.jpg,950,380,0.jpg",
     "contacto": "maria.sol@fakegmail.com",
     "provincia": "Buenos Aires",
     "area": ["informatica", "biologia"]
@@ -37,7 +37,7 @@
     "nombre": "Michelle",
     "apellido": "Valiero",
     "nacimiento": "26/12/1920",
-    "descripcion": "Educadora de robótica en escuelas primarias",
+    "descripcion": "",
     "foto": "http://placekitten.com/800/600",
     "contacto": "maria.sol@fakegmail.com",
     "provincia": "Buenos Aires",
@@ -47,10 +47,10 @@
     "nombre": "Mariana",
     "apellido": "Azolís",
     "nacimiento": "26/12/1895",
-    "descripcion": "Educadora de robótica en escuelas primarias",
+    "descripcion": "CTO en una ecommerce",
     "foto": "http://placekitten.com/800/600",
     "contacto": "maria.sol@fakegmail.com",
     "provincia": "Buenos Aires",
-    "area": ["informatica", "biologia"]
+    "area": ["informatica"]
   }
 ]
