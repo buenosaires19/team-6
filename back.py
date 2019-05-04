@@ -72,7 +72,6 @@ def sortearProvincia(provinciaElegida):
 def sortearArea(areaElegida):
     personasDic = levantarInfoDB()
     personasArea = []
-
     for x in personas:
         if x.area == areaElegida:
             personasArea.append(personas[x])
