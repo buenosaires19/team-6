@@ -1,0 +1,25 @@
+{
+ "post":{
+  "id": 0,
+  "votos": 0,
+  "nombre": "Maria",
+  "apellido": "Sol",
+  "nacimiento": "26/12/1990",
+  "descripcion": "desc...",
+  "foto": "url",
+  "contacto": "string",
+  "provincia": "Buenos Aires",
+  "area": ["informatica", "biologia"]
+ },
+ "post1":{
+  "id":465,
+  "votos": 2143,
+  "nombre": "Carlos",
+  "apellido": "Santiago",
+  "nacimiento": "1/02/1999",
+  "descripcion": "hola me llamo santiago",
+  "foto": "url",
+  "contacto": "string",
+  "provincia": "Cordoba",
+  "area": ["informatica"]
+ }}
