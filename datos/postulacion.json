@@ -1,12 +1,113 @@
+
+POST: /article/
 {
-    "id": 0,
-    "nombre": "Maria",
-    "apellido": "Sol",
-    "nacimiento": "26/12/1990",
-    "descripcion": "descripcion...",
-    "foto": "url",
-    "contacto": "string",
-    "provincia": "Buenos Aires",
-    "area": ["informatica", "biologia"],
-    "votos": 0
-  }
+  "id": 0,
+  "votos": 0,
+  "nombre": "Maria",
+  "apellido": "Sol",
+  "nacimiento": "26/12/1990",
+  "descripcion": "descripcion...",
+  "foto": "url",
+  "contacto": "string",
+  "provincia": "Buenos Aires",
+  "area": ["informatica", "biologia"]
+}
+
+response:
+{
+  "id": 0,
+  "votos": 0,
+  "nombre": "Maria",
+  "apellido": "Sol",
+  "nacimiento": "26/12/1990",
+  "descripcion": "descripcion...",
+  "foto": "url",
+  "contacto": "string",
+  "provincia": "Buenos Aires",
+  "area": ["informatica", "biologia"]
+}
+
+POST: /article/:id/vote  (null)
+respose:
+{
+  "id": 0,
+  "votos": 0,
+  "nombre": "Maria",
+  "apellido": "Sol",
+  "nacimiento": "26/12/1990",
+  "descripcion": "descripcion...",
+  "foto": "url",
+  "contacto": "string",
+  "vote": vote++,
+  "provincia": "Buenos Aires",
+  "area": ["informatica", "biologia"]
+}
+
+
+GET: /article/:id
+{
+  "id": 0,
+  "votos": 0,
+  "nombre": "Maria",
+  "apellido": "Sol",
+  "nacimiento": "26/12/1990",
+  "descripcion": "descripcion...",
+  "foto": "url",
+  "contacto": "string",
+  "provincia": "Buenos Aires",
+  "area": ["informatica", "biologia"]
+}
+
+GET: /articles
+[{
+  "id": 0,
+  "votos": 0,
+  "nombre": "Maria",
+  "apellido": "Sol",
+  "nacimiento": "26/12/1990",
+  "descripcion": "descripcion...",
+  "foto": "url",
+  "vote": vote++,
+  "contacto": "string",
+  "provincia": "Buenos Aires",
+  "area": ["informatica", "biologia"]
+},{
+  "id": 0,
+  "votos": 0,
+  "nombre": "Maria",
+  "apellido": "Sol",
+  "nacimiento": "26/12/1990",
+  "descripcion": "descripcion...",
+  "foto": "url",
+  "vote": vote++,
+  "contacto": "string",
+  "provincia": "Buenos Aires",
+  "area": ["informatica", "biologia"]
+}]
+
+GET: /articles/selected/atributes
+{["atributes", "provincias", "votos"]}
+
+GET: /articles/selected&ordered_by=(atributes|provincias|votos)
+# lo retorna segun por el mas votado
+
+[{
+  "nombre": "Maria",
+  "apellido": "Sol",
+  "nacimiento": "26/12/1990",
+  "descripcion": "descripcion...",
+  "foto": "url",
+  "contacto": "string",
+  "provincia": "Buenos Aires",
+  "area": ["informatica", "biologia"]
+},{
+  "nombre": "Maria",
+  "apellido": "Sol",
+  "nacimiento": "26/12/1990",
+  "descripcion": "descripcion...",
+  "foto": "url",
+  "contacto": "string",
+  "provincia": "Buenos Aires",
+  "area": ["informatica", "biologia"]
+},...]
+
