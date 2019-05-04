@@ -8,9 +8,11 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <AppRouter >
-      <Header/>
-    </AppRouter>
+    <div className={"center-to-display"}>
+      <AppRouter >
+        <Header/>
+      </AppRouter>
+    </div>
   );
 }
 
