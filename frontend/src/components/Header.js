@@ -4,7 +4,6 @@ import { Button, Alignment, Navbar } from "@blueprintjs/core";
 import { ALIGNMENT_RIGHT } from '@blueprintjs/icons/lib/esm/generated/iconContents';
 import logo from '../assets/logo.webp'
 
-const Header = () =>
   <Navbar className="header">
 
         <Navbar.Group align={Alignment.LEFT}>
