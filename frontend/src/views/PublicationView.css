@@ -11,7 +11,7 @@
  font-weight: bold
 }
 .actividad{
-    color:rgb(35, 9, 150);
+    color:rgba(21, 154, 8, 0.9);
     font-size: 22px
 }
 .detalles{
@@ -20,5 +20,5 @@
         text-align: justify;   
             
     }
-
+       
     
