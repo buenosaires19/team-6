@@ -15,6 +15,6 @@ const Header = () =>
             <Button className="bp3-minimal" icon="home" text="Ingresar" />
             <Button className="bp3-minimal" icon="document" text="Postular" />
         </Navbar.Group>
-  </Navbar>
+  </Navbar> 
 
 export default Header;
