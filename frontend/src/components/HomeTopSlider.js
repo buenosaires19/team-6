@@ -1,6 +1,6 @@
 import React from 'react';
 
 const HomeTopSlider = () =>
-    <p>Links de la home</p>
+    <p>Slider de home</p>
 
 export default HomeTopSlider;
