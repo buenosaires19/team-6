@@ -3,23 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import postulacion from './mock/postulacion.json';
 import Header from './components/Header';
+import HomeLinks from './components/HomeLinks';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Header />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Slider de top postulaciones</p>
+        <HomeLinks />
       </header>
     </div>
   );
