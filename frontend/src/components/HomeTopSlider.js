@@ -65,7 +65,7 @@ class HomeTopSlider extends React.Component {
 
 const Slide = (postulacion, id) =>
     <div className="imagen-carousel" key={id} style={
-        {backgroundImage: "url(http://placekitten.com/1000/700)" }
+        {backgroundImage:  `url(${postulacion.foto})` }
         }>
         <p className="subtitulo">{postulacion.nombre}, {postulacion.apellido}</p><br/>
         <Link to={`/publicacion/${postulacion.id}`} className="descrip">{postulacion.descripcion}</Link>
