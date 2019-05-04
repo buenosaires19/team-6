@@ -3,8 +3,8 @@ import { AnchorButton } from '@blueprintjs/core';
 import { ALIGNMENT_RIGHT } from '@blueprintjs/core';
 
 const GanadorasAnteriores = () =>
-<div >
-<AnchorButton text="Ganadoras Anteriores" />    
+<div className={"row"} >
+<AnchorButton text="Ganadoras as" />    
 </div>
 
 

@@ -9,7 +9,7 @@ const Header = () =>
 
         <Navbar.Group align={Alignment.LEFT}>
             <Navbar.Heading className="bp3-nav"><img src={logo} style={{height:36}}/></Navbar.Heading>
-            <Navbar.Heading className="bp3-nav">CHICAS EN TECNLOGÍA</Navbar.Heading>
+            <Navbar.Heading className="bp3-nav">GRANDES MUJERES</Navbar.Heading>
             <span class="bp3-navbar-divider"></span>
         </Navbar.Group>
 
