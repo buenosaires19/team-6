@@ -18,11 +18,12 @@ const PublicationView = () =>
         <p className= "actividad">Investigadora del CONICET </p>
         <p className= "detalles">Egresada de la UBA en el 2009 de Lic. en Bioquímica. Actualmente se encarga de la parte de investigaciń y desarrollo en el laboratorio de enfermedades virales de ...</p>
         <ButtonGroup minimal={false}>
+        <AnchorButton rightIcon="thumbs-up" >Votar</AnchorButton>
+        <Button icon="social-media">Compartir</Button>
        <Button icon="flag">Denunciar</Button>
-       <Button icon="social-media">Compartir</Button>
-       <AnchorButton rightIcon="thumbs-up" >Votar</AnchorButton>
-       </ButtonGroup>   
        
+       
+       </ButtonGroup>         
        
        </Card>
        

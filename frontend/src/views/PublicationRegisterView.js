@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormGroup, InputGroup } from '@blueprintjs/core';
+import {AnchorButton} from '@blueprintjs/core'
 
 const inputs = [
     {
@@ -38,7 +39,7 @@ const PublicationRegisterView = () =>
             <InputGroup id={input.property} placeholder="Placeholder text" />
         </FormGroup>)
     }
-        
+        <AnchorButton text="Postular candidata" icon={"user"} large={true} fill={true}/>
     </div>
 
 export default PublicationRegisterView;
