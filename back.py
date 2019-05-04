@@ -1,5 +1,9 @@
 import json
-
+from flask import Flask
+#from working.serving import run_simple
+from flask import render_template
+from flask import sessions
+import requests
 class posteo:
     def __init__(self, j):
         self.id = j["id"]
@@ -54,25 +58,19 @@ def getJSONByID(id):
     x = buscarPorIP(id)
     return x.getJSON()
 
+@app.route("/getRank")
 def getJSONRank():
     personas = levantarInfoDB()
     personasJSON = []
     for i in personas:
         personasJSON.append(personas[i].getJSON())
-    return personasJSON
+    res = requests.post('localhost:3000',personasJSON)
+    print(res.text)
 
-def sortearProvincia(provinciaElegida):
-    personas =levantarInfoDB()
-    personasProvincias=[]
-    for x in personas:
-        if x.provincia==provinciaElegida:
-            personasProvincias.append(personas[x])
-    return personasProvincias
-    
-def sortearArea(areaElegida):
-    personasDic = levantarInfoDB()
-    personasArea = []
-    for x in personas:
-        if x.area == areaElegida:
-            personasArea.append(personas[x])
-    return personasArea
+app = Flask(__name__)
+@app.route("/")
+def main():
+    return render_template("index.html")
+
+if __name__ == '__main__':
+    app.run()
