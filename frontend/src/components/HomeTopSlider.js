@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemsCarousel from 'react-items-carousel';
 import range from 'lodash/range';
+import {Link} from 'react-router-dom';
 import './HomeTopSlider.css';
 
 
@@ -14,19 +15,12 @@ class HomeTopSlider extends React.Component {
   
       setTimeout(() => {
         this.setState({
-          children: this.createChildren(20),
+          children: this.createChildren(this.props.postulaciones),
         })
       }, 100);
     }
   
-    createChildren = n => range(n).map(this.createChildrenId);
-  
-    createChildrenId = (i) => 
-        <div className="imagen-carousel" key={i} style={
-            {  backgroundImage: "url(http://placekitten.com/1000/700)" }
-            }>
-            {i}
-        </div>
+    createChildren = postulaciones => postulaciones.map(Slide);
 
     changeActiveItem = (activeItemIndex) => this.setState({ activeItemIndex });
   
@@ -67,5 +61,13 @@ class HomeTopSlider extends React.Component {
     }
   } 
 
+  
+const Slide = (postulacion, id) => 
+    <div className="imagen-carousel" key={id} style={
+        {backgroundImage: "url(http://placekitten.com/1000/700)" }
+        }>
+        {postulacion.nombre}, {postulacion.apellido}<br/>
+        <Link to={`/publicacion/${postulacion.id}`}>{postulacion.descripcion}</Link>
+    </div>
 
 export default HomeTopSlider;

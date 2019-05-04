@@ -10,7 +10,7 @@ const AppRouter = ({children}) =>
         {children}
         <Route exact path="/" component={HomeView} />
         <Route path="/buscar" component={SearchView} />
-        <Route path="/publicacion" component={PublicationView} />
+        <Route path="/publicacion/:id" component={PublicationView} />
     </Router>
 
 export default AppRouter;
