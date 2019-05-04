@@ -1,5 +1,8 @@
 import json
-
+from flask import Flask
+#from working.serving import run_simple
+from flask import render_template
+from flask import sessions
 class posteo:
     def __init__(self, j):
         self.id = j["id"]
@@ -60,3 +63,11 @@ def getJSONRank():
     for i in personas:
         personasJSON.append(personas[i].getJSON())
     return personasJSON
+
+app = Flask(__name__)
+@app.route("/")
+def main():
+    return render_template("index.html")
+
+if __name__ == '__main__':
+    app.run()
