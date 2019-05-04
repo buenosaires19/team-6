@@ -4,8 +4,8 @@ import { Button, Alignment, Navbar } from "@blueprintjs/core";
 import { ALIGNMENT_RIGHT } from '@blueprintjs/icons/lib/esm/generated/iconContents';
 import logo from '../assets/logo.webp'
 
+const Header = () =>
   <Navbar className="header">
-
         <Navbar.Group align={Alignment.LEFT}>
             <Navbar.Heading className="bp3-nav"><img src={logo} style={{height:36}}/></Navbar.Heading>
             <Navbar.Heading className="bp3-nav">GRANDES MUJERES</Navbar.Heading>

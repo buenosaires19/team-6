@@ -2,6 +2,8 @@ import {times} from "lodash";
 
 import postulacion from './postulacion.json';
 
+export const mockPostulacion = postulacion;
+
 export const mockTop = times(5, () => postulacion);
 
 export const mockProvincias = ["Buenos Aires", "Mendoza", "Santa Fe", "San Juan"];

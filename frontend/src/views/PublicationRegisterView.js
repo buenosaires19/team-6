@@ -32,8 +32,8 @@ const PublicationRegisterView = () =>
     <div>{
         inputs.map((input) => 
         <FormGroup
-        label={input.label}
-        labelFor={input.property}
+            label={input.label}
+            labelFor={input.property}
         >
             <InputGroup id={input.property} placeholder="Placeholder text" />
         </FormGroup>)

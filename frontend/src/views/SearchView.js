@@ -1,7 +1,8 @@
 import React from 'react';
-import { Card, H3, H2, Tag } from '@blueprintjs/core';
-import {  mockProvinciasSelect, mockAreasSelect } from '../mock/mock';
+import { Card, H3, Divider } from '@blueprintjs/core';
+import {  mockProvinciasSelect, mockAreasSelect, mockPostulacion } from '../mock/mock';
 import Select from 'react-select';
+import SearchItem from '../components/SearchItem';
 
 const SearchView = () => 
     <div className="row">
@@ -24,14 +25,12 @@ const SearchView = () =>
             </Card>
         </div>
         <div className="col-xs-12 col-sm-8">
-            <SearchItem />
+            <SearchItem {...mockPostulacion} />
+            <Divider />
+            <SearchItem {...mockPostulacion} />
         </div>
-        
     </div>
 
-const SearchItem = () =>
-    <div>
-        <H2>Marina Mayos<Tag large={true}>Informática</Tag></H2>    
-    </div>
+
 
 export default SearchView;
